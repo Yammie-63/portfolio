@@ -5,27 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio - Home</title>
     <link rel="stylesheet" href="style.css">
+    <style> 
+  main {
+    display: flex; 
+    align-items: center;
+    padding: 20px;
+}
+.intro {
+    width: 40%; 
+    height: 250px;
+    margin: 50px 50px 40px 200px;
+}
+img {
+    width: 300px;
+    height: 440px;
+    border: 1px solid whitesmoke;
+    border-radius: 15%;
+    margin: 10px;
+}
+
+.social-icons {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+.social-icons img {
+    width: 20px; 
+    height: 20px;
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+ 
+.social-icons img:hover {
+    transform: scale(1.2) rotate(10deg);
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.8));
+}
+  </style> 
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="contact.html">CONTACT</a></li>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contacts.html">CONTACT</a></li>
             </ul>
         </nav>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+          </a>
+          <a href="https://whatsapp.com" target="_blank">
+            <img src="whatsup.png" alt="whatsapp">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="x.png" alt="Twitter">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="insta.png" alt="Instagram">
+          </a>
+        </div>  
     </header>
 
     <main>
-        <section class="intro">  
-            <p>I'm a passionate web developer, creating beautiful and functional websites.</p>
+        <section class="intro">
+             <h2>--- Hello!</h2>
+            <p>I'm yamikani immaculate Makwinja. A data analyst and full-stack developer based in Blantyre, Malawi</p>
+            <button class="button"> My CV</button>
         </section>
+        <img src="Snap.jpg" alt="profile">
+        
     </main>
-
-    <footer>
-        <p>© 2025 My Portfolio</p>
+    <footer>  
+        <p>© 2025 My Portfolio. All rights reserved.</p>
     </footer>
 </body>
 </html>
-

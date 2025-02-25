@@ -1,9 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('k.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; 
+    background-color: #a39e9e;
     color: #333;
     height: 100%;
     margin: 0;

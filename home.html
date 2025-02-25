@@ -43,6 +43,7 @@ img {
     filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.8));
 }
   </style> 
+
 </head>
 <body>
     <header>
@@ -81,5 +82,27 @@ img {
     <footer>  
         <p>© 2025 My Portfolio. All rights reserved.</p>
     </footer>
+    <script>
+      // Smooth scroll on clicking links in the navigation
+      document.querySelectorAll('nav ul li a').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+              const targetId = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetId);
+              window.scrollTo({
+                  top: targetElement.offsetTop,
+                  behavior: 'smooth'
+              });
+          });
+      });
+       // Button functionality: Opens the CV PDF in a new tab
+       const button = document.querySelector('.button');
+          if (button) {
+              button.addEventListener('click', () => {
+                  // Open the PDF file (replace 'my_cv.pdf' with your actual file path)
+                  window.open('desktop/edited cv', '_blank');
+              });
+          }
+  </script>
 </body>
 </html>
